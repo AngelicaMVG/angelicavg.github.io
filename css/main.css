@@ -6,9 +6,11 @@ div.parallax-container {
   height: 750px ;
 }
 
-#home {
-  padding-top: 5%;
+#home > div.parallax-container {
+  height: 550px;
 }
+
+
 
 .imagen-home, .img-skills {
   width: 100%;
@@ -85,13 +87,20 @@ div.col.card-pad {
   width: 100%;
 }
 
-@media only screen and (min-width:768px) and (max-width: 1024px){
+@media (min-width: 1024px) {
 
-  #home.parallax-container {
+  #aboutMe {
+    top: 5%;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1023px){
+
+  #home > .parallax-container {
     height: 750px !important;
   }
-  .parallax-container {
-    height: 600px !important;
+  div.parallax-container {
+    height: 600px ;
   }
 
   .text-nombre {
@@ -101,7 +110,7 @@ div.col.card-pad {
   #aboutMe {
     background-color: transparent;
     position: absolute;
-    top: 38%;
+    top: 30%;
   }
   .acercaDeMi {
     background-color: rgba(231, 231, 231, 0.53);
