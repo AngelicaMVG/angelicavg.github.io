@@ -1,0 +1,175 @@
+body {
+  font-family: Poppins;
+}
+
+div.parallax-container {
+  height: 750px ;
+}
+
+#home {
+  padding-top: 5%;
+}
+
+.imagen-home, .img-skills {
+  width: 100%;
+  opacity: .5;
+  background-size: cover;
+}
+
+.text-nombre {
+  margin-top: 10%;
+  font-family: Merriweather Sans;
+  font-size: 1em;
+  color: #fff;
+  text-shadow: .2em .2em black;
+}
+
+#aboutMe , #proyectos{
+  padding: 4%;
+  background-color: #fff;
+}
+
+.acercaDeMi {
+  background-color: rgba(231, 231, 231, 0.53);
+  font-size: 1em;
+}
+
+.btn {
+  margin-bottom: 5%;
+}
+
+.container>.row.estadisticas {
+  margin-left: 1%;
+}
+
+.estadisticas {
+  margin: 15% 5%;
+  background-color: rgba(0, 0, 0, 0.73);
+  width: 100%;
+  color: #fff;
+  z-index: 2;
+  padding: 5%;
+}
+
+div.skill {
+  padding: 5%;
+}
+
+.skill>img.icono {
+  min-width: 0%;
+  min-height: 0;
+  position: relative;
+  width: 10%;
+  display: inline;
+  left: 5%;
+}
+
+.skill > div.progress {
+  height: 15px;
+}
+
+div.col.card-pad {
+  padding: 2%;
+}
+
+.proyectos {
+  margin-top: 5%;
+}
+
+.card>div.modal {
+  width: 60%;
+  max-height: 100%;
+}
+
+.img-modal {
+  width: 100%;
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px){
+
+  #home.parallax-container {
+    height: 750px !important;
+  }
+  .parallax-container {
+    height: 600px !important;
+  }
+
+  .text-nombre {
+    margin-top: 5%;
+  }
+
+  #aboutMe {
+    background-color: transparent;
+    position: absolute;
+    top: 38%;
+  }
+  .acercaDeMi {
+    background-color: rgba(231, 231, 231, 0.53);
+    font-size: 1em;
+  }
+
+  .estadisticas {
+    margin-top: 15%;
+    width: 100%;
+  }
+
+  div.skill {
+    padding: 0;
+  }
+
+  .skill > div.progress {
+    height: 10px;
+  }
+
+  .skill>img.icono {
+    width: 15%;
+  }
+}
+
+@media only screen and  (max-width: 767px) {
+
+  #home> div.parallax-container {
+    height: 500px;
+  }
+
+  div.parallax-container {
+    height: 650px;
+  }
+
+  .text-nombre {
+    margin-top: 35%;
+  }
+  .nombre {
+    font-size: 3em;
+  }
+  .btn {
+    width: 60%;
+  }
+  .cont-skill {
+    font-size: 2em;
+  }
+  .estadisticas {
+    width: 100%;
+  }
+
+  div.skill {
+    padding: 0;
+  }
+
+  .skill > div.progress {
+    height: 10px;
+  }
+
+  .skill>img.icono {
+    width: 15%;
+  }
+
+  .skill>img.icono.icono-sm {
+    width: 12%;
+  }
+
+  .card>div.modal {
+    width: 100%;
+    max-height: 100%;
+  }
+}
