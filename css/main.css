@@ -1,5 +1,7 @@
-body {
+body , html {
   font-family: Poppins;
+  margin: 0;
+  padding: 0;
 }
 
 div.parallax-container {
@@ -10,7 +12,9 @@ div.parallax-container {
   height: 550px;
 }
 
-
+#contacto {
+  display: none;
+}
 
 .imagen-home, .img-skills {
   width: 100%;
@@ -87,11 +91,24 @@ div.col.card-pad {
   width: 100%;
 }
 
+footer {
+  background-color: #B1DEDA;
+  height: 50px;
+  font-size: 1em;
+  padding: .5%;
+  margin-top: -2%;
+  color: #fff;
+}
+
+
+
 @media (min-width: 1024px) {
 
   #aboutMe {
     top: 5%;
   }
+
+
 }
 
 @media only screen and (min-width:768px) and (max-width: 1023px){
@@ -145,6 +162,12 @@ div.col.card-pad {
     height: 650px;
   }
 
+  #contacto {
+    display: block;
+    background-color: #009587;
+    padding: 5% 0;
+  }
+
   .text-nombre {
     margin-top: 35%;
   }
@@ -180,5 +203,9 @@ div.col.card-pad {
   .card>div.modal {
     width: 100%;
     max-height: 100%;
+  }
+
+  .btn-social {
+    margin-left: 8%;
   }
 }
