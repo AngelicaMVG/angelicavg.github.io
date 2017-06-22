@@ -12,7 +12,7 @@ div.parallax-container {
   height: 550px;
 }
 
-#contacto {
+#contacto-movil {
   display: none;
 }
 
@@ -43,6 +43,29 @@ div.parallax-container {
 .btn {
   margin-bottom: 5%;
 }
+
+.btn-cv {
+ transform-style: preserve-3d;
+}
+
+.btn-cv:after{
+ top: -100%;
+ left: 0px;
+ width: 100%;
+ position: absolute;
+ background: #3a9999;
+ border-radius: 5px;
+ content: 'Descargar';
+ transform-origin: left bottom;
+ transform: rotateX(90deg);
+ cursor: pointer;
+}
+
+.btn-cv:hover {
+ transform-origin: center bottom;
+ transform: rotateX(-90deg) translateY(50%);
+}
+
 
 .container>.row.estadisticas {
   margin-left: 1%;
@@ -91,6 +114,16 @@ div.col.card-pad {
   width: 100%;
 }
 
+#contacto {
+  background-color: #009587;
+  padding: 5% 0;
+}
+
+
+  .btn-social {
+    margin-left: 8%;
+  }
+
 footer {
   background-color: #B1DEDA;
   height: 50px;
@@ -99,7 +132,6 @@ footer {
   margin-top: -2%;
   color: #fff;
 }
-
 
 
 @media (min-width: 1024px) {
@@ -163,6 +195,10 @@ footer {
   }
 
   #contacto {
+    display: none;
+  }
+
+  #contacto-movil {
     display: block;
     background-color: #009587;
     padding: 5% 0;
