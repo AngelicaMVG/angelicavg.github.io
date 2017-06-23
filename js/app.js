@@ -7,7 +7,6 @@ $(document).ready(function(){
    });
    $('.parallax').parallax();
    $('.modal').modal();
-
  });
 
 var cargarProgressBar = function(){

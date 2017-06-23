@@ -14,26 +14,28 @@
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper  teal darken-2 nav-font ">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down  ">
-          <li><a href="#home">Acerca de mi</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
 
-        <ul id="slide-out" class="side-nav">
+  <div id="nav-desk" class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper teal">
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
           <li><a href="#home">Acerca de mi</a></li>
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-chevron-down"></i></a>
       </div>
     </nav>
+  </div>
+  <div id="nav-movil">
+    <ul id="slide-out" class="side-nav">
+      <li><a href="#home">Acerca de mi</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto-movil">Contacto</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse show-on-large menu-mov"><i class="fa fa-bars"></i></a>
   </div>
 
   <section id="home">
@@ -43,7 +45,7 @@
       </div>
       <div class="center-align text-nombre">
         <h1 class="nombre"> Angélica <br> Velázquez</h1>
-        <h4 class="nombre">Front End Developer Jr.</h4>
+        <h4 class="front">Front End Developer Jr.</h4>
       </div>
     </div>
   </section>
@@ -54,7 +56,9 @@
         <h2 class="header">Acerca de mi</h2>
         <p class="grey-text text-darken-3 lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="https://drive.google.com/file/d/0B1weaXrO025IV3hIZzh4X1gzeTA/view?usp=sharing" target="new_blank" class=" btn btn-large btn-cv"><i class="fa fa-download "></i> CV</a>
+        <span class=" btn btn-large boton-cv">
+          <a href="assets/DOCS/Angelica Velazquez.pdf" download="Angelica Velazquez.pdf" class="cv"><i class="fa fa-download "></i> CV</a>
+      </span>
       </div>
     </div>
   </section>
@@ -192,10 +196,10 @@
     <div class="comtainer">
       <div class="row social-media center">
         <div class="col  s10 offset-s1">
-          <a class="btn-floating  waves-effect  waves-light red lighten-2" href="https://github.com/AngelicaMVG" target="new_blank"><i class="fa fa-github"></i></a>
-          <a class="btn-floating  waves-effect  btn-social waves-light red lighten-2" href="https://www.linkedin.com/in/angelica-marcela-velazquez-gomez-4b97b3145/" target="new_blank"><i class="fa fa-linkedin"></i></a>
-          <a class="tooltipped btn-floating  waves-effect  btn-social waves-light red lighten-2" data-position="bottom" data-delay="50" data-tooltip="(55) 55-55-55-55 "><i class="fa fa-phone"></i></a>
-          <a class="tooltipped btn-floating  waves-effect  btn-social waves-light red lighten-2" data-position="bottom" data-delay="50" data-tooltip="angie.velazquez2211@gmail.com" ><i class="fa fa-envelope"></i></a>
+          <a class="btn-floating  waves-effect  waves-light  cyan lighten-1" href="https://github.com/AngelicaMVG" target="new_blank"><i class="fa fa-github"></i></a>
+          <a class="btn-floating  waves-effect  btn-social waves-light  cyan lighten-1" href="https://www.linkedin.com/in/angelica-marcela-velazquez-gomez-4b97b3145/" target="new_blank"><i class="fa fa-linkedin"></i></a>
+          <a class="tooltipped btn-floating  waves-effect  btn-social waves-light  cyan lighten-1" data-position="bottom" data-delay="50" data-tooltip="(55) 55-55-55-55 "><i class="fa fa-phone"></i></a>
+          <a class="tooltipped btn-floating  waves-effect  btn-social waves-light  cyan lighten-1" data-position="bottom" data-delay="50" data-tooltip="angie.velazquez2211@gmail.com"><i class="fa fa-envelope"></i></a>
         </div>
       </div>
     </div>
@@ -203,12 +207,17 @@
 
   <section id="contacto">
     <div class="comtainer">
+      <div class="row center contact-label">
+        <div class="col m12">
+          <h3>Contacto</h3>
+        </div>
+      </div>
       <div class="row social-media center">
         <div class="col  s10 offset-s1">
           <a class="btn-floating  waves-effect btn-large  waves-light red lighten-2" href="https://github.com/AngelicaMVG" target="new_blank"><i class="fa fa-github"></i></a>
           <a class="btn-floating  waves-effect btn-large  btn-social waves-light red lighten-2" href="https://www.linkedin.com/in/angelica-marcela-velazquez-gomez-4b97b3145/" target="new_blank"><i class="fa fa-linkedin"></i></a>
           <a class="tooltipped btn-floating  waves-effect btn-large  btn-social waves-light red lighten-2" data-position="bottom" data-delay="50" data-tooltip="(55) 55-55-55-55 "><i class="fa fa-phone"></i></a>
-          <a class="tooltipped btn-floating  waves-effect btn-large btn-social waves-light red lighten-2" data-position="bottom" data-delay="50" data-tooltip="angie.velazquez2211@gmail.com" ><i class="fa fa-envelope"></i></a>
+          <a class="tooltipped btn-floating  waves-effect btn-large btn-social waves-light red lighten-2" data-position="bottom" data-delay="50" data-tooltip="angie.velazquez2211@gmail.com"><i class="fa fa-envelope"></i></a>
         </div>
       </div>
     </div>
